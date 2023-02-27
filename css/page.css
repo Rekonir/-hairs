@@ -1,0 +1,471 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("/file/font/Roboto.woff2") format("woff2"), url("/file/font/Roboto.woff") format("woff"), url("/file/font/Roboto.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("/file/font/Robotothin.woff2") format("woff2"), url("/file/font/Robotothin.woff") format("woff"), url("/file/font/Robotothin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Thin Italic"), local("Roboto-ThinItalic"), url("/file/font/Robotothinitalic.woff2") format("woff2"), url("/file/font/Robotothinitalic.woff") format("woff"), url("/file/font/Robotothinitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Light"), local("Roboto-Light"), url("/file/font/Robotolight.woff2") format("woff2"), url("/file/font/Robotolight.woff") format("woff"), url("/file/font/Robotolight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"), url("/file/font/Robotolightitalic.woff2") format("woff2"), url("/file/font/Robotolightitalic.woff") format("woff"), url("/file/font/Robotolightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"), url("/file/font/Roboto.woff2") format("woff2"), url("/file/font/Roboto.woff") format("woff"), url("/file/font/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("/file/font/Robotoitalic.woff2") format("woff2"), url("/file/font/Robotoitalic.woff") format("woff"), url("/file/font/Robotoitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("/file/font/Robotomedium.woff2") format("woff2"), url("/file/font/Robotomedium.woff") format("woff"), url("/file/font/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"), url("/file/font/Robotomediumitalic.woff2") format("woff2"), url("/file/font/Robotomediumitalic.woff") format("woff"), url("/file/font/Robotomediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("/file/font/Robotobold.woff2") format("woff2"), url("/file/font/Robotobold.woff") format("woff"), url("/file/font/Robotobold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold Italic"), local("Roboto-BoldItalic"), url("/file/font/Robotobolditalic.woff2") format("woff2"), url("/file/font/Robotobolditalic.woff") format("woff"), url("/file/font/Robotobolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Black"), local("Roboto-Black"), url("/file/font/Robotoblack.woff2") format("woff2"), url("/file/font/Robotoblack.woff") format("woff"), url("/file/font/Robotoblack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Black Italic"), local("Roboto-BlackItalic"), url("/file/font/Robotoblackitalic.woff2") format("woff2"), url("/file/font/Robotoblackitalic.woff") format("woff"), url("/file/font/Robotoblackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #efefef;
+  color: #333333;
+  font-family: "Roboto", "Times New Roman", serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 51px;
+  background-color: #efefef;
+  box-shadow: 0px 0px 4px 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+header a.header__text,
+header a.header__text:active,
+header a.header__text:hover {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 51px 0px;
+}
+.content .content__header {
+  padding: 0px 145px;
+  background: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content .content__header .content__logo {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 515px;
+  border-bottom: 1px solid #efefef;
+}
+.content .content__header .content__logo .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+.content .content__header .content__logo .phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 40px;
+}
+.content .content__header .content__logo .btn__phone {
+  width: 170px;
+  height: 40px;
+  background: #efefef;
+  border: 2px solid #66c05d;
+  border-radius: 40px;
+  padding: 12px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+.content .content__header .content_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 968px;
+  height: 80px;
+  gap: 40px;
+}
+.content .content__main {
+  padding: 192px 145px;
+  width: 100%;
+  height: 604px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  background-image: url(/file/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content .content__main .btn {
+  width: 170px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 13px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #66c05d;
+  cursor: pointer;
+}
+.content .content__bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 80px 145px;
+  gap: 100px;
+}
+.content .content__bot .chairs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+}
+.content .content__bot .chairs .chairs__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.content .content__bot .chairs .chairs__box .chairs__elem {
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: white;
+}
+.content .content__bot .chairs .chairs__box .chairs__elem .chairs__btn {
+  width: 130px;
+  height: 35px;
+  background: #66c05d;
+  border-radius: 30px;
+  padding: 13px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.content .content__bot .spam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.content .content__bot .spam .spam__box {
+  min-width: 540px;
+  min-height: 282px;
+  padding: 35px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 65px;
+  background: #66c05d;
+}
+.content .content__bot .spam .spam__box .spam__boxText {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 25px;
+}
+.content .content__bot .spam .spam__box .spam__boxText input[type=email] {
+  width: 225px;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #66c05d;
+  border-radius: 30px;
+  padding: 9px 23px;
+}
+.content p,
+.content a,
+.content a:active,
+.content a:hover,
+.content h1,
+.content h2,
+.content h3 {
+  text-decoration: none;
+  margin: 0;
+}
+.content h1.logo__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: #66c05d;
+  text-transform: uppercase;
+}
+.content p {
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+}
+.content p.phone__text {
+  font-size: 16px;
+  line-height: 19px;
+  width: 127px;
+}
+.content p.btn__phoneText {
+  font-size: 14px;
+  line-height: 16px;
+}
+.content a.menu__text,
+.content a.menu__text:active,
+.content a.menu__text:hover {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.content h2.main__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+}
+.content p.main__text {
+  font-size: 14px;
+  line-height: 143%;
+  color: #ffffff;
+}
+.content p.btn__text {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.content h3.bot__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.content p.chairs__name {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+.content p.chairs__price {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.content p.chairs__btnText {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.content p.spam__header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.content p.spam__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .up {
+  width: 100%;
+  padding: 37px 145px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: white;
+  gap: 205px;
+}
+footer .up .cosial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+}
+footer .up .cosial a.cosial__icon,
+footer .up .cosial a.cosial__icon:active,
+footer .up .cosial a.cosial__icon:hover {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #66c05d;
+  cursor: pointer;
+}
+footer .up .phisic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+footer .up .phisic .btn__phone {
+  width: 170px;
+  height: 40px;
+  background: #efefef;
+  border: 2px solid #66c05d;
+  border-radius: 40px;
+  padding: 12px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+footer .down {
+  width: 100%;
+  padding: 25px 145px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: #efefef;
+}
+footer p.phone__text {
+  font-size: 16px;
+  line-height: 19px;
+  width: 127px;
+}
+footer p.btn__phoneText {
+  font-size: 14px;
+  line-height: 16px;
+}
+footer p.addres {
+  margin-right: 65px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+footer p.down__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #828282;
+}
+
+/*# sourceMappingURL=page.css.map */
