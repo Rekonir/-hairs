@@ -186,7 +186,7 @@ header a.header__text:hover {
   justify-content: start;
   flex-direction: column;
   gap: 20px;
-  background-image: url(/file/main.png);
+  background-image: url("./file/main.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
